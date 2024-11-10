@@ -10,4 +10,4 @@ WORKDIR /app
 COPY . /app
 
 # Run hello.py when the container launches
-CMD ["python", "hello.py"]1 
+CMD ["python", "hello.py"]

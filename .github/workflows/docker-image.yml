@@ -25,6 +25,10 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ../../
         push: true
         tags: andrewahn2134/gitghub_action:latest
+        
+    - name: Run python
+      run: |
+        python3 hello.py
